@@ -1,0 +1,13 @@
+package com.db;
+
+import com.db.Database;
+
+public class Print {
+
+	public static void main(String[] args) {
+		
+		Database db = new Database();
+
+	}
+
+}

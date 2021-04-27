@@ -1,0 +1,26 @@
+package com.db;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Database {
+	HashMap<String, ArrayList<String>> db_map = new HashMap<String, ArrayList<String>>();
+	ArrayList<String> info = new ArrayList<String>();
+
+	
+	public Database() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	
+//	test_info.add("Leesungu");
+//	test_info.add("1234");
+//	test_info.add("경기도 성남시");
+//	test_info.add("기간권");
+//	test_info.add("10000p");
+//
+//	db_map.put(text_id, test_info);
+	
+}
+

@@ -1,0 +1,38 @@
+package com.db;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+class Database {
+	HashMap<Integer, ArrayList<String>> db_map = new HashMap<Integer, ArrayList<String>>();
+	ArrayList<String> info = new ArrayList<String>();
+
+	public Database() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void sign_up(int id, int pw, String name, String addr) {
+		info.add(pw + "");
+		info.add(name);
+		info.add(addr);
+		db_map.put(id, info);
+	}
+
+}
+
+public class Print {
+
+	public static void main(String[] args) {
+//		Database db = new Database();
+//		
+//		db.sign_up(73532902, 1234, "이선구", "경기도성남시");
+//		System.out.println(db.db_map.get(73532902));
+//		
+//		
+//		Database db2 = new Database();
+//		System.out.println(db2.db_map.get(73532902));
+		
+		
+	}
+
+}

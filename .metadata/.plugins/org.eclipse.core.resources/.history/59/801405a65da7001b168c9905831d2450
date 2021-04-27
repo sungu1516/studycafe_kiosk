@@ -1,0 +1,9 @@
+package com.db;
+
+public class Sign_up extends Database {
+	
+	public Sign_up(String id, String pw, String name) {
+		db_map.put(id, pw);
+	}
+
+}

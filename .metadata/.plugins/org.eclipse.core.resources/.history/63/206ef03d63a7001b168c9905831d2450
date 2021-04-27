@@ -1,0 +1,13 @@
+package com.db;
+
+import com.db.Database;
+
+public class Print {
+
+	public static void main(String[] args) {
+		
+		Sign_up user1 = new Sign_up("sungu1516", 1234, "이선구", "경기도 성남시");
+		
+	}
+
+}

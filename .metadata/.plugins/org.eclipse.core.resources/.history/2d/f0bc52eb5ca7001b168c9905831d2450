@@ -1,0 +1,11 @@
+package com.db;
+
+public class Print {
+
+	public static void main(String[] args) {
+		Database db = new Database();
+		db.sign_up(73532902, 1234, "경기도성남시");
+		System.out.println(db.db_map.get(73532902));
+	}
+
+}

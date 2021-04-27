@@ -1,0 +1,22 @@
+package com.db;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class Print {
+
+	public static void main(String[] args) {
+//		Database db = new Database();
+//		
+//		db.sign_up(73532902, 1234, "이선구", "경기도성남시");
+//		System.out.println(db.db_map.get(73532902));
+//		
+//		
+//		Database db2 = new Database();
+//		System.out.println(db2.db_map.get(73532902));
+		
+		
+	}
+
+}

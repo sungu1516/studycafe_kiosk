@@ -1,0 +1,19 @@
+package com.db;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Database {
+	HashMap<String, ArrayList<String>> db_map = new HashMap<String, ArrayList<String>>();
+	ArrayList<String> info = new ArrayList<String>();
+
+	public Database() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void sign_up (int id, int pw, String addr) {
+		info.add(pw+"", addr);
+		db_map.put(id + "", )
+	}
+
+}
