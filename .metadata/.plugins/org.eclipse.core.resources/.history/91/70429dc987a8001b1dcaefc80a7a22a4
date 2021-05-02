@@ -1,0 +1,55 @@
+package com.db;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+public class Login {
+
+	String path_id = "A:\\Swing\\database\\User_info\\user_id.txt";
+	String path_idpw = "A:\\Swing\\database\\User_info\\user_idpw.txt";
+	String path_id_info = "A:\\Swing\\database\\User_info\\user_info.txt";
+
+	String user_info = "";
+
+	public Login(String id, int pw) {
+		try {
+
+			BufferedReader br = new BufferedReader(new FileReader(path_idpw));
+			BufferedReader br1 = new BufferedReader(new FileReader(path_id_info));
+			
+			while (true) {
+				String line = br.readLine();
+
+				if (line == null) {
+					System.out.println("로그인 실패");
+					break;
+				}
+
+				if (line.equals(id + ";" + pw)) {
+					System.out.println("로그인 성공");
+					user_info += line;
+					break;
+				}
+
+			}
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+	public void selectOp(String option, int num) {
+
+	}
+
+	public void getInfo() {
+		System.out.println(user_info);
+	}
+	
+	
+	
+	public void idFind (String id) {
+		
+	}
+}

@@ -1,0 +1,15 @@
+package com.db;
+
+import com.db.Database;
+
+public class Print {
+
+	public static void main(String[] args) {
+		
+		Sign_up a = new Sign_up("lee", 1234, "ddd", "addr");
+		
+		
+		
+	}
+
+}

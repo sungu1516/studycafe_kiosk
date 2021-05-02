@@ -1,0 +1,16 @@
+package com.db;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+import com.db.Database;
+
+public class Print {
+
+	public static void main(String[] args) {
+
+		Sign_up a = new Sign_up("id", 1234, "김서경", "경기도");
+
+	}
+
+}

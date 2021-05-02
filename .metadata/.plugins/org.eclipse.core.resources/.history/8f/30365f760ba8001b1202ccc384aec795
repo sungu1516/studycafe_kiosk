@@ -1,0 +1,18 @@
+package com.db;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+import com.db.Database;
+
+public class Print {
+
+	public static void main(String[] args) {
+		
+		Sign_up2 a = new Sign_up2("eee", 1234, "bbb", "addr2");
+		
+		
+
+	}
+
+}

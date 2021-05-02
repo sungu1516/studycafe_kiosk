@@ -1,9 +1,0 @@
-import javax.swing.JFrame;
-
-public class Simple {
-	JFrame j; //j객체는 아직 주소값을 할당받지 못한 상태이다. 
-	
-	public Simple() {
-		j
-	}
-}

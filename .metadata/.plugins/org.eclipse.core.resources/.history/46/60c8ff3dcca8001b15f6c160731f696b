@@ -1,0 +1,23 @@
+package com.db;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+import com.db.Database;
+
+public class Print {
+
+	public static void main(String[] args) {
+
+		Sign_up a = new Sign_up("73532902", 1234, "이선구", "경기도 성남시");
+		Sign_up b = new Sign_up("12345334", 5678, "이전구", "경기도 용인시");
+		Sign_up c = new Sign_up("53623442", 9834, "유태양", "경기도 용인시");
+		Sign_up d = new Sign_up("63543902", 1235, "김미정", "경기도 용인시");
+		Sign_up e = new Sign_up("15339402", 8888, "김서경", "서울특별시");
+		
+		Login user1 = new Login("73532902", 1234);
+		user1.getINf()
+		
+	}
+
+}
