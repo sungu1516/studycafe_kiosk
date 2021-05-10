@@ -1,0 +1,46 @@
+package com.test;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+public class Db {
+	String path_id = "A:\\kiosk\\projectStudyCafe\\User_info\\user_id.txt";
+	String path_pw = "A:\\kiosk\\projectStudyCafe\\User_info\\user_pw.txt";
+	String path_info = "A:\\kiosk\\projectStudyCafe\\User_info\\user_info.txt";
+
+	ArrayList<String> id_list = new ArrayList<String>();
+	ArrayList<String> pw_list = new ArrayList<String>();
+	
+	public void bringDb() {
+		
+		try {
+			BufferedReader br_id = new BufferedReader(new FileReader(path_id));
+			BufferedReader br_pw = new BufferedReader(new FileReader(path_pw));
+			
+			String data_id = "";
+			String data_pw = "";
+			
+			while ((data_id = br_id.readLine()) != null && ((data_pw = br_pw.readLine()) != null)) {
+				
+				id_list.add(data_id);
+				pw_list.add(data_pw);
+			}
+
+			br_id.close();
+			br_pw.close();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+	
+	public static void main(String[] args) {
+		Db a = new Db();
+		a.bringDb();
+		System.out.println(id_list);
+		System.out.println(pw_list);
+	}
+
+}

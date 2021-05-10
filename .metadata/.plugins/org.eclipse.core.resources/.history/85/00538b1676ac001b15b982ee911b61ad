@@ -1,0 +1,19 @@
+package com.test;
+
+import java.util.ArrayList;
+
+public class Db {
+	String path_id = "A:\\kiosk\\projectStudyCafe\\User_info\\user_id.txt";
+	String path_pw = "A:\\kiosk\\projectStudyCafe\\User_info\\user_pw.txt";
+	String path_info = "A:\\kiosk\\projectStudyCafe\\User_info\\user_info.txt";
+	
+	
+	public static void bringDb() {
+		ArrayList<String> id_list = new ArrayList<String>();
+		ArrayList<String> pw_list = new ArrayList<String>();
+		
+		
+	}
+	
+	
+}

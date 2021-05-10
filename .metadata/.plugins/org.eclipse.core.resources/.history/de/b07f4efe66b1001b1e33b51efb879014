@@ -1,0 +1,83 @@
+package com.test;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.Color;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.SwingConstants;
+import javax.swing.JButton;
+import javax.swing.JSplitPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+
+
+public class LoginSuccess_frame {
+
+	private JFrame frame;
+	String id;
+	String pw;
+		
+	
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					LoginSuccess_frame window = new LoginSuccess_frame();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public LoginSuccess_frame() {
+		initialize();
+	}
+	
+	public LoginSuccess_frame(String id) {
+		this.id = id;
+		initialize();
+	}
+	
+	
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(0, 0, 606, 612);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.DARK_GRAY);
+		panel.setBounds(41, 46, 510, 481);
+		frame.getContentPane().add(panel);
+		panel.setLayout(null);
+		panel.setVisible(false);
+		
+		JLabel lblNewLabel = new JLabel("null\uD68C\uC6D0\uB2D8 \uD658\uC601\uD569\uB2C8\uB2E4. \uC6D0\uD558\uB294 \uC11C\uBE44\uC2A4\uB97C \uC120\uD0DD\uD574\uC8FC\uC138\uC694");
+		lblNewLabel.setBounds(62, 256, 385, 19);
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setForeground(Color.RED);
+		lblNewLabel.setFont(new Font("±¼¸²", Font.BOLD | Font.ITALIC, 15));
+		panel.add(lblNewLabel);
+		
+		JButton btn_userinfo = new JButton("\uB0B4\uC815\uBCF4");
+		btn_userinfo.setBounds(215, 396, 79, 27);
+		btn_userinfo.setFont(new Font("±¼¸²", Font.BOLD | Font.ITALIC, 15));
+		panel.add(btn_userinfo);
+	}
+}

@@ -1,0 +1,72 @@
+package com.test;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.Color;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.SwingConstants;
+import javax.swing.JButton;
+
+
+public class LoginSuccess_frame {
+
+	private JFrame frame;
+	String id;
+	String pw;
+		
+	
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					LoginSuccess_frame window = new LoginSuccess_frame();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public LoginSuccess_frame() {
+		initialize();
+	}
+	
+	public LoginSuccess_frame(String id) {
+		this.id = id;
+		initialize();
+	}
+	
+	
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(0, 0, 606, 612);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel(id + "회원님 환영합니다. 원하는 서비스를 선택해주세요");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setFont(new Font("굴림", Font.BOLD | Font.ITALIC, 15));
+		lblNewLabel.setBounds(94, 270, 403, 35);
+		frame.getContentPane().add(lblNewLabel);
+		
+		JButton btn_userinfo = new JButton("\uB0B4\uC815\uBCF4");
+		btn_userinfo.setFont(new Font("굴림", Font.BOLD | Font.ITALIC, 15));
+		btn_userinfo.setBounds(225, 383, 142, 54);
+		frame.getContentPane().add(btn_userinfo);
+	}
+}
