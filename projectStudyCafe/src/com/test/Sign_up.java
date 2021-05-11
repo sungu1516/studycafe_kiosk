@@ -10,7 +10,7 @@ public class Sign_up {
 
 	String path_id = "A:\\kiosk\\projectStudyCafe\\User_info\\user_id.txt";
 	String path_pw = "A:\\kiosk\\projectStudyCafe\\User_info\\user_pw.txt";
-	String path_op = "A:\\kiosk\\projectStudyCafe\\User_info\\user_option.txt";
+	String path_op = "A:\\kiosk\\projectStudyCafe\\User_info\\user_op.txt";
 
 	// File file = new File(path);
 
